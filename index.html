@@ -11,47 +11,41 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- Top bar -->
-  <div class="topbar">
-    <span>EST. 2026 · DISTRICT 7</span>
-    <span class="topbar-mid">WALK-INS WELCOME · APPOINTMENTS PREFERRED</span>
-    <span>MON–SAT · 9AM–7PM</span>
-  </div>
+  <div class="split">
 
-  <!-- Header -->
-  <header class="site-header" id="top">
-    <a href="#top" class="brand">
-      <span class="brand-mark">D7</span>
-      <span class="brand-name">District&nbsp;7<small>BARBERSHOP</small></span>
-    </a>
-    <nav class="nav">
-      <a href="#services">Services</a>
-      <a href="#gallery">Gallery</a>
-      <a href="#about">About</a>
-      <a href="#visit">Visit</a>
-      <a href="#book" class="btn btn-ghost nav-book">Book Now</a>
-    </nav>
-  </header>
-
-  <!-- Hero -->
-  <section class="hero">
-    <div class="hero-media" style="background-image:url('images/hero-chair.jpg')"></div>
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-      <p class="eyebrow">Precision Grooming for Men</p>
-      <h1>Sharp Cuts.<br />Clean Fades.<br /><span class="accent">Real Craft.</span></h1>
-      <p class="hero-sub">A no-nonsense barbershop where old-school tradition meets a modern edge. Sit back, relax, and walk out looking your best.</p>
-      <div class="hero-cta">
+  <!-- Sidebar -->
+  <aside class="side" id="top">
+    <div class="side-bg" style="background-image:url('images/hero-chair.jpg')"></div>
+    <div class="side-content">
+      <a href="#top" class="brand">
+        <span class="brand-mark">D7</span>
+        <span class="brand-name">District&nbsp;7<small>BARBERSHOP</small></span>
+      </a>
+      <div class="side-mid">
+        <p class="eyebrow">Precision Grooming for Men</p>
+        <h1>Sharp Cuts.<br />Clean Fades.<br /><span class="accent">Real Craft.</span></h1>
+        <p class="hero-sub">A no-nonsense barbershop where old-school tradition meets a modern edge.</p>
         <a href="#book" class="btn btn-gold">Book Your Chair</a>
-        <a href="#services" class="btn btn-outline">View Services</a>
       </div>
       <div class="hero-stats">
         <div><strong>15+</strong><span>Years on the Clippers</span></div>
-        <div><strong>4.9★</strong><span>Average Rating</span></div>
+        <div><strong>4.9★</strong><span>Avg Rating</span></div>
         <div><strong>6</strong><span>Master Barbers</span></div>
       </div>
+      <nav class="side-nav">
+        <a href="#services"><span>01</span>The Menu</a>
+        <a href="#gallery"><span>02</span>The Work</a>
+        <a href="#about"><span>03</span>Our Story</a>
+        <a href="#visit"><span>04</span>Visit &amp; Book</a>
+      </nav>
+      <div class="side-meta">
+        <span>Mon–Sat · 9AM–7PM · Walk-ins welcome</span>
+        <span>7 Barrow Street · (555) 700-2026</span>
+      </div>
     </div>
-  </section>
+  </aside>
+
+  <main class="main">
 
   <!-- Strip -->
   <div class="strip">
@@ -74,36 +68,29 @@
       <h2>The Menu</h2>
       <p class="section-lede">Every service ends with a hot towel, a clean line-up and a straight-razor finish. No shortcuts.</p>
     </div>
-    <div class="service-grid">
-      <article class="service-card">
-        <div class="service-price">$35</div>
-        <h3>Signature Cut</h3>
+    <div class="menu-board">
+      <article class="menu-row">
+        <div class="menu-line"><h3>Signature Cut</h3><span class="menu-lead"></span><span class="menu-price">$35</span></div>
         <p>A tailored cut built around your head shape and style — scissor or clipper work, washed and styled.</p>
       </article>
-      <article class="service-card featured">
-        <div class="service-tag">Most Popular</div>
-        <div class="service-price">$40</div>
-        <h3>Skin Fade</h3>
+      <article class="menu-row featured">
+        <div class="menu-line"><h3>Skin Fade <span class="service-tag">Most Popular</span></h3><span class="menu-lead"></span><span class="menu-price">$40</span></div>
         <p>Bald-to-blend fade with razor-sharp edges. The cleanest fade in the district, guaranteed.</p>
       </article>
-      <article class="service-card">
-        <div class="service-price">$30</div>
-        <h3>Beard Sculpt</h3>
+      <article class="menu-row">
+        <div class="menu-line"><h3>Beard Sculpt</h3><span class="menu-lead"></span><span class="menu-price">$30</span></div>
         <p>Shape, line and detail your beard with hot-towel prep and a straight-razor finish.</p>
       </article>
-      <article class="service-card">
-        <div class="service-price">$45</div>
-        <h3>Cut &amp; Beard</h3>
+      <article class="menu-row">
+        <div class="menu-line"><h3>Cut &amp; Beard</h3><span class="menu-lead"></span><span class="menu-price">$45</span></div>
         <p>The full treatment — signature cut paired with a complete beard sculpt. Walk out brand new.</p>
       </article>
-      <article class="service-card">
-        <div class="service-price">$40</div>
-        <h3>Hot-Towel Shave</h3>
+      <article class="menu-row">
+        <div class="menu-line"><h3>Hot-Towel Shave</h3><span class="menu-lead"></span><span class="menu-price">$40</span></div>
         <p>A traditional straight-razor shave with hot towels, warm lather and cooling balm.</p>
       </article>
-      <article class="service-card">
-        <div class="service-price">$25</div>
-        <h3>Kids' Cut</h3>
+      <article class="menu-row">
+        <div class="menu-line"><h3>Kids' Cut</h3><span class="menu-lead"></span><span class="menu-price">$25</span></div>
         <p>Clean, patient cuts for the young gentlemen. 12 and under.</p>
       </article>
     </div>
@@ -203,5 +190,8 @@
     <p class="footer-copy">© 2026 District 7 Barbershop · 7 Barrow Street · Photos via Unsplash</p>
     <p class="footer-copy">Demo site by <a href="https://getsitesrightnow.com" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;">Sites Right Now</a> — a site like this for your business, $75/month.</p>
   </footer>
+
+  </main>
+  </div>
 </body>
 </html>
